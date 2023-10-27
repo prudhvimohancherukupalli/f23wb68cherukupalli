@@ -2,4 +2,9 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to #{title} and this is the Initial page.
+
+  button(type="button", class="btn btn-primary") Press Me
+
+  script.
+    console.log("running on http://localhost:3000/")
