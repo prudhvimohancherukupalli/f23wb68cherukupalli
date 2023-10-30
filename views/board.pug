@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}.
+  p Query Paramenters:
+  ul
+    li Rows: #{query.rows}
+    li Columns: #{query.cols}
+
