@@ -12,9 +12,13 @@ block content
     ];
   div.container-fluid
     div.row.d-flex.flex-row
-      each hat in results
-        div.col-sm-2
+      each hat,index in results
+        div.col-sm-2(onclick=`buy(${index})`)
           div
             h3 Style: #{hat.style}
             p Color: #{hat.color}
             p Price: $#{hat.price}
+  script.
+    function buy(index) {
+      alert(`You purchased item ${index}.`);
+    }
